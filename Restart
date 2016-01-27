@@ -1,0 +1,39 @@
+                   Copyright (C) 2015  B.M.
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+/*================================================================================================================================
+----------------------------------------------------------RESTART FUNCTION--------------------------------------------------------
+/* Restart()  v1.0 Final
+ * By: B. M.
+ * Date: 10/18/15
+ * Written in C/C++  ------  Target: G++ Compiler
+ * This function is simply a restart function with simple error handling.
+=================================================================================================================================*/
+bool Restart()
+{
+char chY='Y';                       //CHARACTER For comparison.
+char chy='y';                       //CHARACTER For comparison.
+char c;                             //CHARACTER variable for user input. Used to test the determining the 'no' value.
+bool rest=false;                    //BOOLEAN variable used for restarting the program.
+
+cout<<endl<<"Would you like to start again? Press Y/N to restart:  ";
+cin>>c;                             //Take user input and store it in "c".
+if((c==chY)||(c==chy)){rest=true;}  //Attempting to determine if the value of "c" literally equals 'y' or 'Y'.
+else{rest=rest;}                    //If yes rest is set to true.
+cout<<endl;
+
+return (rest);
+}
+//--------------------------------------------------------------------------------------------------------------------------------
